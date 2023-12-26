@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operations</title>
+  </head>
+  <body>
+    <script>
+      // Promptul cere utilizatorului să introducă valorile pentru variabile a și b
+      a = prompt('Enter "A" value');
+      b = prompt('Enter "B" value');
+
+      // Convertim valorile introduse la numere
+    //   a = parseInt(a);
+    //   b = parseInt(b);
+
+      // Variabile pu afisare valorilor introduse de utilizator
+      nameVal = "######## VALUES #######\n";
+      valueA = "a = " + a + "\n";
+      valueB = "b = " + b + "\n";
+
+      nameOper = "###### OPERATIONS #####\n";
+      operationOne = "a * b = " + a * b + "\n";
+      operationTwo = "a / b = " + a / b + "\n";
+      operationThree = "a + b = " + (a + b) + "\n";
+      operationFour = "a - b = " + (a - b) + "\n";
+
+      alert(
+        nameVal +
+          valueA +
+          valueB +
+          nameOper +
+          operationOne +
+          operationTwo +
+          operationThree +
+          operationFour
+      );
+    </script>
+  </body>
+</html>

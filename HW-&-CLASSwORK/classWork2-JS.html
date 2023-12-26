@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPERTAORS-STUDENT-APPROVAl</title>
+</head>
+<body>
+
+
+    <script>
+        studentMark = +prompt("Enter your note: ")
+        studentBudget = +prompt("Enter your buget: ")
+
+        APPROVAL_MARK = 7.0
+        CONTRACT_COST = 10000
+
+//                                 >= mai mare sau egal 
+        approvedMark = studentMark >= APPROVAL_MARK 
+        approvedMoney = studentBudget >= CONTRACT_COST
+//                              || sau
+        approved = approvedMark || approvedMoney
+
+        alert(" Is approved? " + approved)
+
+
+    </script>
+</body>
+</html>

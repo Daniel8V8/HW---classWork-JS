@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Custom CSS</title>
+  </head>
+  <body>
+    <script>
+
+      color = prompt("Enter color name or code");
+      size = prompt("Enter size in pixels");
+      border = prompt("Enter border size");
+      borderColor = prompt("Enter border color");
+      text = prompt("Enter your text");
+      textColor = prompt("Enter text color");
+      textAlign = prompt("Enter text position:");
+      fontSize = prompt("Enter font size in pixels")
+
+      document.write(
+        `<div style="background: ${color};
+                width: ${size}px;
+                height: ${size}px;
+                border: ${border}px solid ${borderColor};
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: ${textAlign};">
+      <h2 style="color: ${textColor}; font-size: ${fontSize}">${text}</h2>`
+      );
+    
+    </script>
+  </body>
+</html>

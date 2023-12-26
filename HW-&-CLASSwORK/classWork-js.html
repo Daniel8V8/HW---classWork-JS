@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media notelor</title>
+</head>
+<body>
+    <script>
+        // Declarare variabile
+        grade1 = prompt("Introdu prima nota")
+        grade2 = prompt("Introdu a doua nota")
+        grade3 = prompt("Introdu a treia nota")
+
+        // Convertez input-ul in cifre pu calcul corect
+        grade1 = parseInt(grade1);
+        grade2 = parseInt(grade2);
+        grade3 = parseInt(grade3);
+
+        // Calcul
+        avgGrade = (grade1 + grade2 + grade3) / 3
+
+        // Afisare rezultat
+        alert("Media notelor tale este: " + avgGrade);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw2-box-model-js</title>
+</head>
+<body>
+    <script>
+        childWidth     = 100
+        childPadding   = 10
+        childBorder    = 1
+        childMargin    = 20
+
+        parentWidth    = 110
+
+        childFullWidth = 110
+
+        childSize  = childWidth + (childPadding + childBorder + childMargin) * 2
+        overflow   = childSize > parentWidth  // boolean
+
+        childOverflow = childWidth + (childPadding + childBorder + childMargin) * 2 - parentWidth
+
+        alert ("Horizontal child size " + childSize + " px" )
+
+        alert (" child overflow ? " + overflow)
+
+        alert ( " child overflow " + childOverflow + " px" )
+
+    </script>
+</body>
+</html>

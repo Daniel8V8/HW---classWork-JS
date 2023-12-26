@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw1-js-percent-time-charge</title>
+</head>
+<body>
+    <script>
+     baterryCharge = 70             // %   variabila
+
+     FULL_BATTERY = 100             // 100% full charged
+     chargePercentInMinutes = 10   //1% - 10 minutes
+     chargePercentInHours = 60   //6% - 60min
+        
+     etWorkInMinutes = baterryCharge * chargePercentInMinutes 
+     etWorkInHours = baterryCharge / chargePercentInHours 
+
+     alert( etWorkInMinutes + " remaining time to charge in munutes" )
+     alert( etWorkInHours + " remaining time to charge in hours" )
+
+    </script>
+</body>
+</html>

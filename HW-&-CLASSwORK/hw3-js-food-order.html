@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>food-order</title>
+  </head>
+  <body>
+    <script>
+      foodName = "Salad";
+      foodPriceValue = 15.0;
+      foodPriceUnits = " MDL";
+      foodDelivery = 30;
+
+      clientQuantity = prompt("We have" + ": " + foodName + "\nSalad cost" + ": " + foodPriceValue + foodPriceUnits + " \n\nHow many? ");
+
+      deliveryChoice = confirm("Do you want delivery?" + "\n\nDelivery cost" + ": " + foodDelivery + foodPriceUnits);
+
+      
+      if (deliveryChoice) {
+        totalCost = foodPriceValue * clientQuantity + foodDelivery;
+        alert("You've ordered" + ": " + clientQuantity + " " + foodName + "\nWith delivery "  + " \n\nBill" + ": " + totalCost + foodPriceUnits);
+      } else {
+        totalCost = foodPriceValue * clientQuantity;
+        alert("You've ordered" + ": " + clientQuantity + " " + foodName + "\nWithout delivery "  + " \n\nBill" + ": " + totalCost + foodPriceUnits);
+      }
+    </script>
+  </body>
+</html>
